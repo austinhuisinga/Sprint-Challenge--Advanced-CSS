@@ -1,1 +1,43 @@
 // Mixins Here
+
+.bttn (@width, @pad, @margin) {
+  display: block;
+  background-color: @header-font-color;
+  color: @porcelain;
+  cursor: pointer;
+  width: @width;
+  padding: @pad 0;
+  font-size: 1.8rem; //4.5cm
+  border-radius: 5px;
+  margin: @margin;
+  border: 2px solid @header-font-color;
+
+  &:hover {
+    background-color: @porcelain;
+    color: @header-font-color;
+  }
+}
+
+.dflex () {
+  display: flex;
+}
+
+.animation (@border-color, @color, @background-color) {
+  animation-name: bg;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  border: 1px solid @border-color;
+  border-radius: 10px;
+  background-color: @background-color;
+
+  &:hover {
+    background-color: @color;
+    color: @background-color;
+  }
+
+  @keyframes bg {
+    100% {
+      color: @color;
+    }
+  }
+}

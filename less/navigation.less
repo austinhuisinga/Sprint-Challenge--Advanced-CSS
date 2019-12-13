@@ -1,1 +1,31 @@
 // Navigation code here
+nav {
+  background-color: @nav-bg;
+  border: 2px solid @nav-border;
+  padding: 11px;
+
+  div {
+    .dflex();
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .links {
+    .dflex();
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    
+
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      padding: 0 16px;
+      color: @nav-font;
+    }
+  }
+}
