@@ -1,1 +1,17 @@
 // Mixins Here
+
+.bttn (@width, @pad, @margin) {
+  display: block;
+  background-color: @header-font-color;
+  color: @porcelain;
+  cursor: pointer;
+  width: @width;
+  padding: @pad 0;
+  font-size: 1.8rem; //4.5cm
+  border-radius: 5px;
+  margin: @margin;
+  border: none;
+}
+//min 2 parameters on button mixin
+//font-size same for both buttons
+// desktop width 26.5cm
