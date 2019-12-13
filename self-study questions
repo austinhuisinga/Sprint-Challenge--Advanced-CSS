@@ -1,0 +1,20 @@
+
+   1. What is the difference between an adaptive website and a fully responsive website?
+
+      An adaptive website can be deployed quicker, because it relies on some fixed units. A fully responsive site looks better great at every angle, because it only uses responsive units.
+
+   2. Describe what it means to be mobile first vs desktop first.
+   
+      In a mobile- first web-site, the site is developed as at a mobile size first, then stretched out all the way to a desktop. Min-width media queries are used instead of max-width, like a traditional site uses.
+
+   3. What does font-size: 62.5% in the html tag do for us when using rem units?
+
+      It makes calculating the rem conversion value to pixels simpler, by making it 1rem = 10px. 
+
+   4. How would you describe preprocessing to someone new to CSS?
+
+      Preprocessing makes CSS more powerful, faster to use, and less repetitive primarily by enabling developers to store values in abstract objects, as well as cleaning things up by nesting. 
+
+   5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+      I think in the future I'll appreciate variables and mixins when I get into more complex, repetitive projects, but based on what we've done so far, nesting has cleaned up my code substantially. 
