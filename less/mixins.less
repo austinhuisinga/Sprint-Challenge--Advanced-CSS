@@ -17,6 +17,27 @@
     color: @header-font-color;
   }
 }
-//min 2 parameters on button mixin
-//font-size same for both buttons
-// desktop width 26.5cm
+
+.dflex () {
+  display: flex;
+}
+
+.animation (@border-color, @color, @background-color) {
+  animation-name: bg;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  border: 1px solid @border-color;
+  border-radius: 10px;
+  background-color: @background-color;
+
+  &:hover {
+    background-color: @color;
+    color: @background-color;
+  }
+
+  @keyframes bg {
+    100% {
+      color: @color;
+    }
+  }
+}
