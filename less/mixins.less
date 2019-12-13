@@ -10,7 +10,12 @@
   font-size: 1.8rem; //4.5cm
   border-radius: 5px;
   margin: @margin;
-  border: none;
+  border: 2px solid @header-font-color;
+
+  &:hover {
+    background-color: @porcelain;
+    color: @header-font-color;
+  }
 }
 //min 2 parameters on button mixin
 //font-size same for both buttons
